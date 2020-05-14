@@ -104,7 +104,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/header320.png");
   background-color: rgb(26, 25, 21);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   width: 100%;
   padding: 20px 0 138px 0;
@@ -282,13 +282,17 @@ input[type="radio"].visually-hidden {
   height: 44px;
 }
 
+@media (min-width: 321px) {
+  .header {
+    background-image: url("../img/header768.png");
+  }
+}
 @media (min-width: 768px) {
   .container {
     width: 768px;
     padding: 0 48px;
   }
   .header {
-    background-image: url("../img/header768.png");
     padding: 38px 0 234px 0;
   }
   .header__wrp {
@@ -353,5 +357,8 @@ input[type="radio"].visually-hidden {
   }
   .partners__list-item {
     width: 220px;
+  }
+  .find-button {
+    width: 225px;
   }
 }
